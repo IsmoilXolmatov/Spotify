@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183A3EF42AADE91B0017CE3E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EF32AADE91B0017CE3E /* SearchVC.swift */; };
+		183A3EF62AADE9330017CE3E /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EF52AADE9330017CE3E /* LibraryVC.swift */; };
+		183A3EF82AADE9970017CE3E /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EF72AADE9970017CE3E /* TabBarVC.swift */; };
+		183A3EFB2AADE9B40017CE3E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EFA2AADE9B40017CE3E /* SettingsVC.swift */; };
+		183A3EFD2AADE9C90017CE3E /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EFC2AADE9C90017CE3E /* SearchResultsVC.swift */; };
+		183A3EFF2AADE9EA0017CE3E /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3EFE2AADE9EA0017CE3E /* AuthVC.swift */; };
+		183A3F012AADE9F60017CE3E /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3F002AADE9F60017CE3E /* WelcomeVC.swift */; };
+		183A3F032AADEA030017CE3E /* PlayListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3F022AADEA030017CE3E /* PlayListVC.swift */; };
+		183A3F052AADEA100017CE3E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A3F042AADEA100017CE3E /* ProfileVC.swift */; };
 		189629292AADE4BB0004F1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189629282AADE4BB0004F1AE /* AppDelegate.swift */; };
 		1896292B2AADE4BB0004F1AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896292A2AADE4BB0004F1AE /* SceneDelegate.swift */; };
-		1896292D2AADE4BB0004F1AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896292C2AADE4BB0004F1AE /* ViewController.swift */; };
-		189629302AADE4BB0004F1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896292E2AADE4BB0004F1AE /* Main.storyboard */; };
+		1896292D2AADE4BB0004F1AE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896292C2AADE4BB0004F1AE /* HomeVC.swift */; };
 		189629322AADE4BE0004F1AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189629312AADE4BE0004F1AE /* Assets.xcassets */; };
 		189629352AADE4BE0004F1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189629332AADE4BE0004F1AE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183A3EF32AADE91B0017CE3E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		183A3EF52AADE9330017CE3E /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		183A3EF72AADE9970017CE3E /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		183A3EFA2AADE9B40017CE3E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		183A3EFC2AADE9C90017CE3E /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
+		183A3EFE2AADE9EA0017CE3E /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		183A3F002AADE9F60017CE3E /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		183A3F022AADEA030017CE3E /* PlayListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListVC.swift; sourceTree = "<group>"; };
+		183A3F042AADEA100017CE3E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		189629252AADE4BB0004F1AE /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189629282AADE4BB0004F1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1896292A2AADE4BB0004F1AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1896292C2AADE4BB0004F1AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1896292F2AADE4BB0004F1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1896292C2AADE4BB0004F1AE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		189629312AADE4BE0004F1AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189629342AADE4BE0004F1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189629362AADE4BE0004F1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183A3EF22AADE8DC0017CE3E /* CoreVCs */ = {
+			isa = PBXGroup;
+			children = (
+				183A3EF32AADE91B0017CE3E /* SearchVC.swift */,
+				1896292C2AADE4BB0004F1AE /* HomeVC.swift */,
+				183A3EF52AADE9330017CE3E /* LibraryVC.swift */,
+				183A3EF72AADE9970017CE3E /* TabBarVC.swift */,
+			);
+			path = CoreVCs;
+			sourceTree = "<group>";
+		};
+		183A3EF92AADE99D0017CE3E /* OtherVCs */ = {
+			isa = PBXGroup;
+			children = (
+				183A3EFA2AADE9B40017CE3E /* SettingsVC.swift */,
+				183A3F022AADEA030017CE3E /* PlayListVC.swift */,
+				183A3EFC2AADE9C90017CE3E /* SearchResultsVC.swift */,
+				183A3EFE2AADE9EA0017CE3E /* AuthVC.swift */,
+				183A3F002AADE9F60017CE3E /* WelcomeVC.swift */,
+				183A3F042AADEA100017CE3E /* ProfileVC.swift */,
+			);
+			path = OtherVCs;
+			sourceTree = "<group>";
+		};
 		1896291C2AADE4BB0004F1AE = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +96,63 @@
 		189629272AADE4BB0004F1AE /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				189629282AADE4BB0004F1AE /* AppDelegate.swift */,
-				1896292A2AADE4BB0004F1AE /* SceneDelegate.swift */,
-				1896292C2AADE4BB0004F1AE /* ViewController.swift */,
-				1896292E2AADE4BB0004F1AE /* Main.storyboard */,
-				189629312AADE4BE0004F1AE /* Assets.xcassets */,
-				189629332AADE4BE0004F1AE /* LaunchScreen.storyboard */,
+				189629412AADE4F30004F1AE /* Models */,
+				189629402AADE4E40004F1AE /* Resources */,
+				1896293F2AADE4DE0004F1AE /* Managers */,
+				1896293E2AADE4D50004F1AE /* ViewModels */,
+				1896293D2AADE4CF0004F1AE /* Views */,
+				1896293C2AADE4C60004F1AE /* Controllers */,
 				189629362AADE4BE0004F1AE /* Info.plist */,
 			);
 			path = Spotify;
+			sourceTree = "<group>";
+		};
+		1896293C2AADE4C60004F1AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				183A3EF92AADE99D0017CE3E /* OtherVCs */,
+				183A3EF22AADE8DC0017CE3E /* CoreVCs */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1896293D2AADE4CF0004F1AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				189629332AADE4BE0004F1AE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1896293E2AADE4D50004F1AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1896293F2AADE4DE0004F1AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		189629402AADE4E40004F1AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				189629312AADE4BE0004F1AE /* Assets.xcassets */,
+				189629282AADE4BB0004F1AE /* AppDelegate.swift */,
+				1896292A2AADE4BB0004F1AE /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		189629412AADE4F30004F1AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +215,6 @@
 			files = (
 				189629352AADE4BE0004F1AE /* LaunchScreen.storyboard in Resources */,
 				189629322AADE4BE0004F1AE /* Assets.xcassets in Resources */,
-				189629302AADE4BB0004F1AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +225,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1896292D2AADE4BB0004F1AE /* ViewController.swift in Sources */,
+				183A3F052AADEA100017CE3E /* ProfileVC.swift in Sources */,
+				183A3EFF2AADE9EA0017CE3E /* AuthVC.swift in Sources */,
+				183A3F012AADE9F60017CE3E /* WelcomeVC.swift in Sources */,
+				183A3EF42AADE91B0017CE3E /* SearchVC.swift in Sources */,
+				183A3EFD2AADE9C90017CE3E /* SearchResultsVC.swift in Sources */,
+				1896292D2AADE4BB0004F1AE /* HomeVC.swift in Sources */,
 				189629292AADE4BB0004F1AE /* AppDelegate.swift in Sources */,
+				183A3F032AADEA030017CE3E /* PlayListVC.swift in Sources */,
 				1896292B2AADE4BB0004F1AE /* SceneDelegate.swift in Sources */,
+				183A3EF82AADE9970017CE3E /* TabBarVC.swift in Sources */,
+				183A3EF62AADE9330017CE3E /* LibraryVC.swift in Sources */,
+				183A3EFB2AADE9B40017CE3E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1896292E2AADE4BB0004F1AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1896292F2AADE4BB0004F1AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		189629332AADE4BE0004F1AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +380,6 @@
 				INFOPLIST_FILE = Spotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +407,6 @@
 				INFOPLIST_FILE = Spotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
