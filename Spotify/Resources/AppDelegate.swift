@@ -15,11 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        self.window = window
-        window.rootViewController = HomeVC()
+        
+        if AuthManager.shared.isSignedIn {
+            window.rootViewController = TabBarVC()
+        } else {
+          let navVC = UINavigationController(rootViewController: WelcomeVC())
+            navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+            navVC.navigationBar.prefersLargeTitles = true
+            window.rootViewController = navVC
+        }
+        
         window.makeKeyAndVisible()
+        self.window = window
+        
+        print(AuthManager.shared.signInUrl?.absoluteString)
         return true
     }
+    
     
     // MARK: UISceneSession Lifecycle
     

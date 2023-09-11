@@ -15,7 +15,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = HomeVC()
+
+        if AuthManager.shared.isSignedIn {
+            window.rootViewController = TabBarVC()
+        } else {
+            let navVC = UINavigationController(rootViewController: WelcomeVC())
+              navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+              navVC.navigationBar.prefersLargeTitles = true
+              window.rootViewController = navVC        }
+        
         window.makeKeyAndVisible()
         self.window = window
     }

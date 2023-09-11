@@ -6,24 +6,69 @@
 //
 
 import UIKit
+import WebKit
 
-class AuthVC: UIViewController {
 
+class AuthVC: UIViewController, WKNavigationDelegate {
+    
+    public var completionHandler: ((Bool) -> Void)?
+    
+    private let webView: WKWebView = {
+        let pref = WKWebpagePreferences()
+        let config = WKWebViewConfiguration()
+        pref.allowsContentJavaScript = true
+        config.defaultWebpagePreferences = pref
+        let webView: WKWebView
+        webView = WKWebView(frame: .zero, configuration: config)
+        return webView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.setUpUI()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    fileprivate func setUpUI() {
+        view.backgroundColor = .systemBackground
+        view.addSubview(webView)
+        webView.navigationDelegate = self
+        guard let url = AuthManager.shared.signInUrl else {
+            return
+        }
+        webView.load(URLRequest(url: url))
     }
-    */
-
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        guard let url = webView.url else {
+            return
+        }
+        
+        //        Exchange code for acsess token
+        let component = URLComponents(string: url.absoluteString)
+        
+        guard let code = component?.queryItems?.first(where: { $0.name == "code" })?.value else {
+            return
+        }
+        
+        webView.isHidden = true
+        
+          DispatchQueue.main.async {
+            AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
+                self?.navigationController?.popToRootViewController(animated: true)
+                self?.completionHandler?(success)
+             }
+        }
+    }
+    
+    
 }
